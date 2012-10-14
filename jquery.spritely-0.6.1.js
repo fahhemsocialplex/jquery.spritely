@@ -526,7 +526,7 @@
             var el = $(this);
             var el_id = $(this).attr('id');
             if ($._spritely.instances[el_id] && $._spritely.instances[el_id]['timeout']){
-                window.clearInterval($._spritely.instances[el_id]['timeout']);
+                window.clearTimeout($._spritely.instances[el_id]['timeout']);
             }
             if ($._spritely.instances[el_id] && $._spritely.instances[el_id]['interval']) {
                 window.clearInterval($._spritely.instances[el_id]['interval']);
